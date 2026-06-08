@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="renderer" content="webkit">
+  <meta name="robots" content="index,follow">
+  <title>搜索影片-影视在线</title>
+  <meta name="description" content="影视在线搜索频道，可按影片名、类型、地区、年份、标签快速查找高清电影、电视剧、综艺和动画内容。">
+  <meta name="keywords" content="搜索影片,影视在线,高清电影,电视剧在线观看,免费影视,在线播放,剧情片,爱情片,动作片,综艺节目,视频播放,影视资源,电影网站,高清视频">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-container nav-wrap">
+      <a class="brand" href="index.html" aria-label="影视在线">
+        <span class="brand-mark">影</span>
+        <span>影视在线</span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="categories.html">分类</a>
+        <a href="rankings.html">排行榜</a>
+          <a href="category-drama.html">剧情文艺</a>
+          <a href="category-romance.html">爱情治愈</a>
+          <a href="category-action.html">动作冒险</a>
+          <a href="category-comedy.html">喜剧家庭</a>
+          <a href="category-suspense.html">悬疑犯罪</a>
+          <a href="category-fantasy.html">奇幻科幻</a>
+      </nav>
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影片..." aria-label="搜索影片">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="menu-toggle" type="button" aria-label="展开导航" aria-expanded="false">☰</button>
+    </div>
+    <div class="mobile-panel" hidden>
+      <div class="site-container mobile-links">
+        <a href="index.html">首页</a>
+        <a href="categories.html">分类总览</a>
+        <a href="rankings.html">排行榜</a>
+          <a href="category-drama.html">剧情文艺</a>
+          <a href="category-romance.html">爱情治愈</a>
+          <a href="category-action.html">动作冒险</a>
+          <a href="category-comedy.html">喜剧家庭</a>
+          <a href="category-suspense.html">悬疑犯罪</a>
+          <a href="category-fantasy.html">奇幻科幻</a>
+        <form action="search.html" method="get" class="mobile-search">
+          <input type="search" name="q" placeholder="搜索影片..." aria-label="移动端搜索影片">
+          <button type="submit">搜索</button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="search-hero">
+      <div class="site-container">
+        <h1>搜索影片</h1>
+        <form action="search.html" method="get" class="search-page-form">
+          <input id="searchPageInput" type="search" name="q" placeholder="输入片名、题材、地区或年份" autocomplete="off">
+          <button type="submit">搜索</button>
+        </form>
+      </div>
+    </section>
+    <section class="site-container content-section" id="searchDynamic" hidden>
+      <div class="section-title">
+        <h2>搜索结果</h2>
+      </div>
+      <div class="movie-grid" id="searchResults"></div>
+    </section>
+    <section class="site-container content-section" id="searchFallback">
+      <div class="section-title">
+        <h2>热门推荐</h2>
+        <a href="rankings.html">热门榜单 <span>›</span></a>
+      </div>
+      <div class="movie-grid">
+        <article class="movie-card" data-title="战后情鸳" data-year="1947" data-hot="97996" data-search="战后情鸳 二战结束三年后,被认为战死的飞行员突然回家,发现妻子已改嫁给自己最好的兄弟。 爱情/剧情/战争 美国 电影 美国 电影 二战 黑色电影 宿命 重逢">
+          <a class="poster-link" href="movies/movie-1584.html">
+            <img src="./84.jpg" alt="战后情鸳" loading="lazy">
+            <span class="poster-badge">爱情</span>
+            <span class="poster-play">▶</span>
+          </a>
+          <div class="movie-card-body">
+            <div class="card-meta"><span>1947</span><span>美国</span><span>电影</span></div>
+            <h3><a href="movies/movie-1584.html">战后情鸳</a></h3>
+            <p>二战结束三年后,被认为战死的飞行员突然回家,发现妻子已改嫁给自己最好的兄弟。</p>
+            <div class="tag-row"><span>美国</span><span>电影</span><span>二战</span></div>
+            <div class="card-foot"><span>评分 8.9</span><span>97,996 热度</span></div>
+          </div>
+        </article>
+        <article class="movie-card" data-title="遗忘尼克" data-year="2023" data-hot="97975" data-search="遗忘尼克 尼克每隔72小时就会被清除记忆,他的妻子为了留住爱,每天都要让两个陌生人重新相爱。 科幻,爱情 欧洲 电影 欧洲 电影 记忆删除 失忆 循环 文艺科幻">
+          <a class="poster-link" href="movies/movie-1362.html">
+            <img src="./12.jpg" alt="遗忘尼克" loading="lazy">
+            <span class="poster-badge">科幻</span>
+            <span class="poster-play">▶</span>
+          </a>
+          <div class="movie-card-body">
+            <div class="card-meta"><span>2023</span><span>欧洲</span><span>电影</span></div>
+            <h3><a href="movies/movie-1362.html">遗忘尼克</a></h3>
+            <p>尼克每隔72小时就会被清除记忆,他的妻子为了留住爱,每天都要让两个陌生人重新相爱。</p>
+            <div class="tag-row"><span>欧洲</span><span>电影</span><span>记忆删除</span></div>
+            <div class="card-foot"><span>评分 7.3</span><span>97,975 热度</span></div>
+          </div>
+        </article>
+        <article class="movie-card" data-title="在杰克逊高地" data-year="2024" data-hot="97896" data-search="在杰克逊高地 纽约皇后区一栋公寓楼里,五个来自不同国家的移民家庭,因一封错投的驱逐令被迫成为“同盟”。 剧情/家庭 美国 电影 美国 电影 移民 社区 身份认同">
+          <a class="poster-link" href="movies/movie-1786.html">
+            <img src="./136.jpg" alt="在杰克逊高地" loading="lazy">
+            <span class="poster-badge">剧情</span>
+            <span class="poster-play">▶</span>
+          </a>
+          <div class="movie-card-body">
+            <div class="card-meta"><span>2024</span><span>美国</span><span>电影</span></div>
+            <h3><a href="movies/movie-1786.html">在杰克逊高地</a></h3>
+            <p>纽约皇后区一栋公寓楼里,五个来自不同国家的移民家庭,因一封错投的驱逐令被迫成为“同盟”。</p>
+            <div class="tag-row"><span>美国</span><span>电影</span><span>移民</span></div>
+            <div class="card-foot"><span>评分 8.5</span><span>97,896 热度</span></div>
+          </div>
+        </article>
+        <article class="movie-card" data-title="我的画家老朋友" data-year="2021" data-hot="97852" data-search="我的画家老朋友 年迈的抽象派画家即将失明,他请年轻时的好友做模特,画下最后一幅肖像。 剧情,艺术 法国 电影 法国 电影 友情 衰老 创作">
+          <a class="poster-link" href="movies/movie-1901.html">
+            <img src="./101.jpg" alt="我的画家老朋友" loading="lazy">
+            <span class="poster-badge">剧情</span>
+            <span class="poster-play">▶</span>
+          </a>
+          <div class="movie-card-body">
+            <div class="card-meta"><span>2021</span><span>法国</span><span>电影</span></div>
+            <h3><a href="movies/movie-1901.html">我的画家老朋友</a></h3>
+            <p>年迈的抽象派画家即将失明,他请年轻时的好友做模特,画下最后一幅肖像。</p>
+            <div class="tag-row"><span>法国</span><span>电影</span><span>友情</span></div>
+            <div class="card-foot"><span>评分 8.7</span><span>97,852 热度</span></div>
+          </div>
+        </article>
+        <article class="movie-card" data-title="夜梦传说之天狼使者" data-year="2017" data-hot="97847" data-search="夜梦传说之天狼使者 每当夜空天狼星闪烁,他就会进入别人梦境,斩杀吞噬噩梦的妖兽,却发现自己也是梦。 奇幻,动作 中国内地 网络电影 中国内地 网络电影 梦境 穿越 守护者 都市异能 传说">
+          <a class="poster-link" href="movies/movie-0129.html">
+            <img src="./129.jpg" alt="夜梦传说之天狼使者" loading="lazy">
+            <span class="poster-badge">奇幻</span>
+            <span class="poster-play">▶</span>
+          </a>
+          <div class="movie-card-body">
+            <div class="card-meta"><span>2017</span><span>中国内地</span><span>网络电影</span></div>
+            <h3><a href="movies/movie-0129.html">夜梦传说之天狼使者</a></h3>
+            <p>每当夜空天狼星闪烁,他就会进入别人梦境,斩杀吞噬噩梦的妖兽,却发现自己也是梦。</p>
+            <div class="tag-row"><span>中国内地</span><span>网络电影</span><span>梦境</span></div>
+            <div class="card-foot"><span>评分 8.5</span><span>97,847 热度</span></div>
+          </div>
+        </article>
+        <article class="movie-card" data-title="毛泽东与斯诺" data-year="2025" data-hot="97826" data-search="毛泽东与斯诺 跨越半个世纪的友谊,美国记者斯诺用镜头记录中国革命,与毛泽东从陌生人成为见证彼此历史的挚友。 历史,传记 中国大陆 电影 中国大陆 电影 革命友谊 跨文化 历史瞬间 纪实 情怀">
+          <a class="poster-link" href="movies/movie-0949.html">
+            <img src="./49.jpg" alt="毛泽东与斯诺" loading="lazy">
+            <span class="poster-badge">历史</span>
+            <span class="poster-play">▶</span>
+          </a>
+          <div class="movie-card-body">
+            <div class="card-meta"><span>2025</span><span>中国大陆</span><span>电影</span></div>
+            <h3><a href="movies/movie-0949.html">毛泽东与斯诺</a></h3>
+            <p>跨越半个世纪的友谊,美国记者斯诺用镜头记录中国革命,与毛泽东从陌生人成为见证彼此历史的挚友。</p>
+            <div class="tag-row"><span>中国大陆</span><span>电影</span><span>革命友谊</span></div>
+            <div class="card-foot"><span>评分 8.7</span><span>97,826 热度</span></div>
+          </div>
+        </article>
+        <article class="movie-card" data-title="黑湖妖异" data-year="2024" data-hot="97719" data-search="黑湖妖异 亚马逊科考队捕获了一只史前鱼怪,却发现它拥有远超人类的智慧与情感。 奇幻,恐怖 英国 电影 英国 电影 怪物 古典 爱情 翻拍">
+          <a class="poster-link" href="movies/movie-0249.html">
+            <img src="./99.jpg" alt="黑湖妖异" loading="lazy">
+            <span class="poster-badge">奇幻</span>
+            <span class="poster-play">▶</span>
+          </a>
+          <div class="movie-card-body">
+            <div class="card-meta"><span>2024</span><span>英国</span><span>电影</span></div>
+            <h3><a href="movies/movie-0249.html">黑湖妖异</a></h3>
+            <p>亚马逊科考队捕获了一只史前鱼怪,却发现它拥有远超人类的智慧与情感。</p>
+            <div class="tag-row"><span>英国</span><span>电影</span><span>怪物</span></div>
+            <div class="card-foot"><span>评分 7.3</span><span>97,719 热度</span></div>
+          </div>
+        </article>
+        <article class="movie-card" data-title="巫女爆走中" data-year="2026" data-hot="97718" data-search="巫女爆走中 神社的继承人白天是端庄巫女,晚上是秋名山最速传说,座驾是贴满符咒的AE86。 喜剧/奇幻/动作 日本 剧集 日本 剧集 巫女 飙车 降妖 反差萌">
+          <a class="poster-link" href="movies/movie-1202.html">
+            <img src="./2.jpg" alt="巫女爆走中" loading="lazy">
+            <span class="poster-badge">喜剧</span>
+            <span class="poster-play">▶</span>
+          </a>
+          <div class="movie-card-body">
+            <div class="card-meta"><span>2026</span><span>日本</span><span>剧集</span></div>
+            <h3><a href="movies/movie-1202.html">巫女爆走中</a></h3>
+            <p>神社的继承人白天是端庄巫女,晚上是秋名山最速传说,座驾是贴满符咒的AE86。</p>
+            <div class="tag-row"><span>日本</span><span>剧集</span><span>巫女</span></div>
+            <div class="card-foot"><span>评分 8.8</span><span>97,718 热度</span></div>
+          </div>
+        </article>
+        <article class="movie-card" data-title="寄宿学校" data-year="2022" data-hot="97717" data-search="寄宿学校 一座与世隔绝的寄宿学校中,学生们发现失踪者并非离开,而是被献祭。 悬疑/惊悚/剧情 英国 剧集 英国 剧集 哥特 秘密 青少年 孤岛 邪教">
+          <a class="poster-link" href="movies/movie-0792.html">
+            <img src="./42.jpg" alt="寄宿学校" loading="lazy">
+            <span class="poster-badge">悬疑</span>
+            <span class="poster-play">▶</span>
+          </a>
+          <div class="movie-card-body">
+            <div class="card-meta"><span>2022</span><span>英国</span><span>剧集</span></div>
+            <h3><a href="movies/movie-0792.html">寄宿学校</a></h3>
+            <p>一座与世隔绝的寄宿学校中,学生们发现失踪者并非离开,而是被献祭。</p>
+            <div class="tag-row"><span>英国</span><span>剧集</span><span>哥特</span></div>
+            <div class="card-foot"><span>评分 8.0</span><span>97,717 热度</span></div>
+          </div>
+        </article>
+        <article class="movie-card" data-title="火线出击下" data-year="2024" data-hot="97589" data-search="火线出击下 前特种兵孤身潜入金三角毒寨营救被俘战友,却发现对方已自愿成为毒枭的“女婿”和继承人。 动作,战争 中国内地 电影 中国内地 电影 缉毒 东南亚 兄弟情 牺牲">
+          <a class="poster-link" href="movies/movie-1117.html">
+            <img src="./67.jpg" alt="火线出击下" loading="lazy">
+            <span class="poster-badge">动作</span>
+            <span class="poster-play">▶</span>
+          </a>
+          <div class="movie-card-body">
+            <div class="card-meta"><span>2024</span><span>中国内地</span><span>电影</span></div>
+            <h3><a href="movies/movie-1117.html">火线出击下</a></h3>
+            <p>前特种兵孤身潜入金三角毒寨营救被俘战友,却发现对方已自愿成为毒枭的“女婿”和继承人。</p>
+            <div class="tag-row"><span>中国内地</span><span>电影</span><span>缉毒</span></div>
+            <div class="card-foot"><span>评分 8.2</span><span>97,589 热度</span></div>
+          </div>
+        </article>
+        <article class="movie-card" data-title="完美世界" data-year="2027" data-hot="97372" data-search="完美世界 当全球最受欢迎的虚拟天堂“完美世界”开始随机删除“不快乐”的用户时,一位父亲才意识到,完美本身就是最大的谎言。 科幻/惊悚 美国 电影 美国 电影 虚拟现实 意识上传 乌托邦 反叛 哲学思辨">
+          <a class="poster-link" href="movies/movie-1443.html">
+            <img src="./93.jpg" alt="完美世界" loading="lazy">
+            <span class="poster-badge">科幻</span>
+            <span class="poster-play">▶</span>
+          </a>
+          <div class="movie-card-body">
+            <div class="card-meta"><span>2027</span><span>美国</span><span>电影</span></div>
+            <h3><a href="movies/movie-1443.html">完美世界</a></h3>
+            <p>当全球最受欢迎的虚拟天堂“完美世界”开始随机删除“不快乐”的用户时,一位父亲才意识到,完美本身就是最大的谎言。</p>
+            <div class="tag-row"><span>美国</span><span>电影</span><span>虚拟现实</span></div>
+            <div class="card-foot"><span>评分 8.6</span><span>97,372 热度</span></div>
+          </div>
+        </article>
+        <article class="movie-card" data-title="无手的少女" data-year="2025" data-hot="96973" data-search="无手的少女 为了逃离父权的压迫,少女亲手切掉双手走入黑暗森林,却被一只受伤的怪兽请求拥抱。 奇幻,寓言 法国 动画电影 法国 动画电影 暗黑童话 女性独立 水彩画风">
+          <a class="poster-link" href="movies/movie-1989.html">
+            <img src="./39.jpg" alt="无手的少女" loading="lazy">
+            <span class="poster-badge">奇幻</span>
+            <span class="poster-play">▶</span>
+          </a>
+          <div class="movie-card-body">
+            <div class="card-meta"><span>2025</span><span>法国</span><span>动画电影</span></div>
+            <h3><a href="movies/movie-1989.html">无手的少女</a></h3>
+            <p>为了逃离父权的压迫,少女亲手切掉双手走入黑暗森林,却被一只受伤的怪兽请求拥抱。</p>
+            <div class="tag-row"><span>法国</span><span>动画电影</span><span>暗黑童话</span></div>
+            <div class="card-foot"><span>评分 8.4</span><span>96,973 热度</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-container footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html"><span class="brand-mark">影</span><span>影视在线</span></a>
+        <p>影视在线是专业的高清影视内容平台，提供海量电影、电视剧、综艺节目在线观看服务，涵盖剧情片、爱情片、动作片、喜剧片等各类精彩影片，高清流畅播放，为您带来优质的观影体验。</p>
+      </div>
+      <div>
+        <h2>影片分类</h2>
+        <ul>
+            <li><a href="category-drama.html">剧情文艺</a></li>
+            <li><a href="category-romance.html">爱情治愈</a></li>
+            <li><a href="category-action.html">动作冒险</a></li>
+            <li><a href="category-comedy.html">喜剧家庭</a></li>
+            <li><a href="category-suspense.html">悬疑犯罪</a></li>
+            <li><a href="category-fantasy.html">奇幻科幻</a></li>
+            <li><a href="category-animation.html">动画动漫</a></li>
+            <li><a href="category-series.html">剧集综艺</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>站内导航</h2>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="categories.html">分类总览</a></li>
+          <li><a href="rankings.html">热门榜单</a></li>
+          <li><a href="search.html">搜索影片</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>观影体验</h2>
+        <p>聚合电影、电视剧、综艺与动画内容，支持电脑与移动端浏览，页面清爽，播放流畅。</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 影视在线. 高清电影电视剧在线观看平台。</div>
+  </footer>
+  <script src="assets/search-index.js"></script>
+  <script src="assets/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
